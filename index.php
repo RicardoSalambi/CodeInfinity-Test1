@@ -8,6 +8,8 @@
             <h2>Proficieny Test 1</h2>
         </div>
 
+        <link rel="stylesheet" href="style.css">
+
     </head>
 
     <body>
