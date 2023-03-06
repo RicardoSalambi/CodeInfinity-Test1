@@ -15,17 +15,22 @@
     <body>
         <form>
             
-            <input type="text" id="name" name="name" placeholder="Name"><br>
+        <div class="fields">
+
+            <div><input type="text" id="name" name="name" placeholder="Name"></div>
             
-            <input type="text" id="surname" name="surname" placeholder="Surname"><br>
+            <div><input type="text" id="surname" name="surname" placeholder="Surname"></div>
 
-            <input type="number" id="id" name="id" placeholder="ID Number" maxlength="13"><br>
+            <div><input type="number" id="id" name="id" placeholder="ID Number" maxlength="13"></div>
 
-            <input type="text" id="dob" name="dob" placeholder="Date of Birth"><br>
+            <div><input type="text" id="dob" name="dob" placeholder="Date of Birth"></div>
 
-            <button type="submit"> Submit </button>
+            <div><button type="submit"> Submit </button></div>
 
-            <button> Cancel </button>
+            <button> Cancel </button></div>
+
+        </div>
+            
             
 
         </form>

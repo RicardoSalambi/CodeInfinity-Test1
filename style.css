@@ -19,3 +19,10 @@ input[type="text"]:focus,
     background-color: #fff;
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
+
+.fields{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+
+}
