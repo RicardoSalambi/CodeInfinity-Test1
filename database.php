@@ -28,7 +28,7 @@
 
     // create CodeInfinity database
     if(!array_search('codeinfinity', array_column( $dbArray -> databases, 'name' ))){
-        
+
 		echo 'codeinfinity database doesn\'t exist, creating it <br/>';
 
         $row = new MongoDB\Driver\BulkWrite();
@@ -37,6 +37,22 @@
         echo 'Created Code Infinity Database <br/>';
         
 	} 
+
+    $value;
+
+    // Query a specific input
+    $query = new MongoDB\Driver\Query(['ID' => $value ],[]);
+	$result = $connection -> executeQuery('codeinfinity.data', $query);
+
+    if ($result !== null) {
+        // The ID value exists in the database
+        // Display an error message to the user or take appropriate action
+
+    } else {
+
+        // The value does not exist in the database
+        // Proceed with form submission
+    } 
 	
    echo "Database codeinfinity selected <br/>";
 ?>
