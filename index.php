@@ -131,10 +131,6 @@
 
 <html>
     <head>
-        <!-- style=" background-color: rgb(61, 65, 61); color: white" -->
-        <div class="header"> 
-            <h2>Proficieny Test 1</h2>
-        </div>
 
         <link rel="stylesheet" href="style.css">
 
@@ -144,6 +140,8 @@
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
             
             <div class="fields">
+
+                <div class="header"> <h2>Proficieny Test 1</h2> </div>
 
                 <div><input type="text" id="name" name="name" placeholder="Name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''; ?>"></div>
                 
@@ -156,6 +154,8 @@
                 <div><button type="submit" name="submit"> Submit </button></div>
 
                 <div><button name="cancel"> Cancel </button></div>
+
+                <div><input class="errorsArea" type="textarea" name="errors" value="<?php echo isset($_POST['errors']) ? $_POST['errors'] : ''; ?>"></div>
 
             </div>
             
